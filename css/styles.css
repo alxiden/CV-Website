@@ -80,6 +80,14 @@ h5 {
     color: white;
 }
 
+#hex {
+    display: inline-block;
+    width: 400px; /* Adjust this width as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 @media (min-width: 800px) {
     #socials {
