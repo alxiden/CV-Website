@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.page {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 1em;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #00f260, #0575e6) 1;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.collapsible-content {
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: black;
+    color: black;
+}
+
+#socials {
+    display: none; /* Hide by default */
+}
+
+#socials a {
+    margin: 10px 0;
+    color: white;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+#hex{
+    color: white;
+}
+
+#shield {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    float: center;
+}
+
+#social-bottom {
+    margin-top: 30px;
+}
+
+#social-bottom a{
+    color: white;
+}
+
+
+@media (min-width: 800px) {
+    #socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #social-bottom {
+        display: none;
+    }
+}
+
+
