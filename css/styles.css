@@ -16,7 +16,14 @@ p {
 }
 
 h5 {
-    color: white;
+    cursor: pointer;
+    color: #00f260; 
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+h5:hover {
+    color: #0575e6; 
+    text-decoration: underline; 
 }
 
 .page {
@@ -34,7 +41,12 @@ h5 {
     padding: 0 18px;
     overflow: hidden;
     background-color: black;
-    color: black;
+    color: white;
+}
+
+.stars {
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #FFD700; /* Gold color for stars */
 }
 
 #socials {
@@ -87,6 +99,8 @@ h5 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
 
 
 @media (min-width: 800px) {
