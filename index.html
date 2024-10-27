@@ -50,20 +50,20 @@
         <section class="page" id="skills">
             <h2 onclick="toggleSection('skills-content')">Skills</h2>
             <div id="skills-content" class="collapsible-content">
-                <p><b>Python:</b> ★★★★★</p>
-                <p><b>Linux:</b> ★★★★★</p>
-                <p><b>Office365:</b> ★★★★★</p>
-                <p><b>PAT Testing:</b> ★★★★★</p>
-                <p><b>Telephony:</b> ★★★★</p>
-                <p><b>Intune:</b> ★★★★</p>
-                <p><b>Proclaim:</b> ★★★</h5>
-                <p><b>Microsoft Azure:</b> ★★★</p>
-                <p><b>Web Design:</b> ★★★</p>
-                <p><b>CyberSecurity:</b> ★★★</p>
-                <p><b>Networking:</b> ★★★</p>
-                <p><b>SQL:</b> ★★★</p>
-                <p><b>Git:</b> ★★</p>
-                <p><b>Project Management:</b> ★★</p>
+                <p><b>Python:</b> <span class="stars">★★★★★</span></p>
+                <p><b>Linux:</b> <span class="stars">★★★★★</span></p>
+                <p><b>Office365:</b> <span class="stars">★★★★★</span></p>
+                <p><b>PAT Testing:</b> <span class="stars">★★★★★</span></p>
+                <p><b>Telephony:</b> <span class="stars">★★★★☆</span></p>
+                <p><b>Intune:</b> <span class="stars">★★★★☆</span></p>
+                <p><b>Proclaim:</b> <span class="stars">★★★☆☆</span></p>
+                <p><b>Microsoft Azure:</b> <span class="stars">★★★☆☆</span></p>
+                <p><b>Web Design:</b> <span class="stars">★★★☆☆</span></p>
+                <p><b>CyberSecurity:</b> <span class="stars">★★★☆☆</span></p>
+                <p><b>Networking:</b> <span class="stars">★★★☆☆</span></p>
+                <p><b>SQL:</b> <span class="stars">★★★☆☆</span></p>
+                <p><b>Git:</b> <span class="stars">★★☆☆☆</span></p>
+                <p><b>Project Management:</b> <span class="stars">★★☆☆☆</span></p>
             </div>
         </section>
         <section class="page" id="education">
@@ -79,9 +79,17 @@
         <section class="page" id="Projects">
             <h2 onclick="toggleSection('Projects-content')">Projects</h2>
             <div id="Projects-content" class="collapsible-content">
-                <h5>Microsoft Intune Enrollment</h5>
-                <h5>NCSC CAF Audit</h5>
-                <h5>Adversery Simulation</h5>
+                <h5 onclick="toggleSection('Intune-content')">Microsoft Intune Enrollment</h5>
+                <p id="Intune-content" class="collapsible-content">Successfully enrolled and configured 130 devices into Microsoft Intune to enhance organizational security. Implemented regular updates, BitLocker encryption, and scheduled antivirus scans to ensure robust protection. Additional security measures were deployed, reinforcing our commitment to maintaining top-tier cybersecurity standards.</p>
+                <h5 onclick="toggleSection('CAF-content')">NCSC CAF Audit</h5>
+                <p id="CAF-content" class="collapsible-content">Conducted a comprehensive cyber security audit for Kings Court Trust using the NCSC Cyber Assessment Framework (CAF). Assessed and evaluated the organization's security posture across key domains, identifying potential vulnerabilities and areas for improvement. Provided strategic recommendations to enhance their overall cyber resilience, ensuring robust protection against emerging threats.</p>
+                <h5 onclick="toggleSection('Adversery-content')">Adversery Simulation</h5>
+                <p id="Adversery-content" class="collapsible-content">Executed a comprehensive adversary simulation on Kings Court Trust's systems to evaluate security defenses. Gained access and identified vulnerabilities, using this insight to bolster the company's security measures. This proactive approach significantly enhanced their defensive strategies, ensuring heightened protection against potential threats.</p>
+                <h5 onclick="toggleSection('Phishing-content')">Phishing Simulation</h5>
+                <p id="Phishing-content" class="collapsible-content">Implemented monthly phishing tests and targeted training for key areas within Kings Court Trust. This initiative aimed to enhance security awareness and resilience, ensuring employees are well-prepared to recognize and respond to phishing attempts. Additionally, maximized the value from purchased security tools, demonstrating a strong return on investment and significantly bolstering the company's defense mechanisms.</p>
+                <h5 onclick="toggleSection('CAF-content')"></h5>
+                <p id="Intune-content" class="collapsible-content"></p>
+
             </div>
         </section>
     </main>
@@ -96,7 +104,6 @@
             <!--Email-->
             <a href="mailto:d.ward@alxiden.co.uk" target="_blank">Email</a>
         </div>
-
     </footer>
     <!--Bootstrap-->
     <script src="js/js.js" charset="utf-8"></script>
