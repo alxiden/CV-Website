@@ -15,6 +15,10 @@ p {
     color: white;
 }
 
+h4 {
+    color: white;
+}
+
 h5 {
     cursor: pointer;
     color: #00f260; 
@@ -24,6 +28,24 @@ h5 {
 h5:hover {
     color: #0575e6; 
     text-decoration: underline; 
+}
+
+th{
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.form-label{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .page {

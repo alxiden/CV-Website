@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Daniel Ward's Homepage</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="row">
+            <div id="title" class="col">
+                <h1>Daniel Ward</h1>
+                <h3>Cyber Security Researcher</h3>
+                <p id="hex">506f77657220696e2050726f77657373</p>
+            </div>
+            <div class="col">
+                <img id="shield" src="../img/shield.jpeg" alt="">
+            </div>
+            <div id="socials" class="col-sm">
+                <!--Socials-->
+                <a href="https://www.linkedin.com/in/alxiden/" target="_blank">LinkedIn</a>
+                <!--Github-->
+                <a href="https://github.com/alxiden" target="_blank">GitHub</a>
+                <!--Mastodon-->
+                <a href="https://mastodon.me.uk/@Alxiden" target="_blank">Mastodon</a>
+                <!--Email-->
+                <a href="mailto:d.ward@alxiden.co.uk" target="_blank">Email</a>
+                <!--PGP Key-->
+                <a href="files/publickey.asc" download="files/publickey.asc">PGP Key</a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container my-4">
+            <a href="../index.html" class="btn btn-secondary mb-3">Home</a>
+            <h2>The Security Culture Diagnostic Survey</h2>
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">1. What’s valued most?</label>
+                    <div class="form-text mb-2">Distribute exactly 10 points across the 4 options below.</div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q1a">Stability and reliability are valued most by the organization. It is critical that everyone knows the rules and follows them. The organization cannot succeed if people are all doing things different ways without centralized visibility.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q1a" id="q1a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q1b">Successfully meeting external requirements is valued most by the organization. The organization is under a lot of scrutiny. It cannot succeed if people fail audits or do not live up to the expectations of those watching.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q1b" id="q1b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q1c">Adapting quickly and competing aggressively are valued most by the organization. Results are what matters. The organization cannot succeed if bureaucracy and red tape impair people’s ability to be agile.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q1c" id="q1c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q1d">People and a sense of community are valued most by the organization. Everyone is in it together. The organization cannot succeed unless people are given the opportunities and skills to succeed on their own.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q1d" id="q1d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">2. How does the organization work?</label>
+                    <div class="form-text mb-2">Distribute exactly 10 points across the 4 options below.</div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q2a">The organization works on authority, policy, and standard ways of doing things. Organizational charts are formal and important. The organization is designed to ensure control and efficiency.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q2a" id="q2a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q2b">The organization works on outside requirements and regular reviews. Audits are a central feature of life. The organization is designed to ensure everyone meets their obligations.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q2b" id="q2b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q2c">The organization works on independent action and giving people decision authority. There’s no one right way to do things. The organization is designed to ensure that the right things get done in the right situations.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q2c" id="q2c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q2d">The organization works on teamwork and cooperation. It is a community. The organization is designed to ensure everyone is constantly learning, growing, and supporting one another.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q2d" id="q2d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">3. What does security mean?</label>
+                    <div class="form-text mb-2">Distribute exactly 10 points across the 4 options below.</div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q3a">Security means policies, procedures, and standards, automated wherever possible using technology. When people talk about security they are talking about the infrastructures in place to protect the organization’s information assets.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q3a" id="q3a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q3b">Security means showing evidence of visibility and control, particularly to external parties. When people talk about security they are talking about passing an audit or meeting a regulatory requirement.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q3b" id="q3b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q3c">Security means enabling the organization to adapt and compete, not hindering it or saying “no” to everything. When people talk about security they are talking about balancing risks and rewards.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q3c" id="q3c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q3d">Security means awareness and shared responsibility. When people talk about security they are talking about the need for everyone to be an active participant in protecting the organization.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q3d" id="q3d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">4. How is information managed and controlled?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q4a">Information is seen as a direct source of business value, accounted for, managed, and controlled like any other business asset. Formal rules and policies govern information use and control.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q4a" id="q4a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q4b">Information is seen as a sensitive and protected resource, entrusted to the organization by others and subject to review and audit. Information use and control must always be documented and verified.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q4b" id="q4b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q4c">Information is seen as a flexible tool that is the key to agility and adaptability in the organization’s environment. Information must be available where and when it is needed by the business, with a minimum of restrictive control.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q4c" id="q4c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q4d">Information is seen as the key to people’s productivity, collaboration, and success. Information must be a shared resource, minimally restricted, and available throughout the community to empower people and make them more successful.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q4d" id="q4d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">5. How are operations managed?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q5a">Operations are controlled and predictable, managed according to the same standards throughout the organization.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q5a" id="q5a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q5b">Operations are visible and verifiable, managed and documented in order to support audits and outside reviews.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q5b" id="q5b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q5c">Operations are agile and adaptable, managed with minimal bureaucracy and capable of fast adaptation and flexible execution to respond to changes in the environment.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q5c" id="q5c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q5d">Operations are inclusive and supportive, allowing people to master new skills and responsibilities and to grow within the organization.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q5d" id="q5d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 6 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">6. How is technology managed?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q6a">Technology is centrally managed. Standards and formal policies exist to ensure uniform performance internally.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q6a" id="q6a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q6b">Technology is regularly reviewed. Audits and evaluations exist to ensure the organization meets its obligations to others.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q6b" id="q6b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q6c">Technology is locally managed. Freedom exists to ensure innovation, adaptation, and results.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q6c" id="q6c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q6d">Technology is accessible to everyone. Training and support exists to empower users and maximize productivity.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q6d" id="q6d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 7 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">7. How are people managed?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q7a">People must conform to the needs of the organization. They must adhere to policies and standards of behavior. The success of the organization is built on everyone following the rules.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q7a" id="q7a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q7b">People must demonstrate that they are doing things correctly. They must ensure the organization meets its obligations. The success of the organization is built on everyone regularly proving that they are doing things properly.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q7b" id="q7b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q7c">People must take risks and make quick decisions. They must not wait for someone else to tell them what’s best. The success of the organization is built on everyone experimenting and innovating in the face of change.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q7c" id="q7c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q7d">People must work as a team and support one other. They must know that everyone is doing their part. The success of the organization is built on everyone learning and growing together.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q7d" id="q7d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 8 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">8. How is risk managed?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q8a">Risk is best managed by getting rid of deviations in the way things are done. Increased visibility and control reduce uncertainty and negative outcomes. The point is to create a reliable standard.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q8a" id="q8a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q8b">Risk is best managed by documentation and regular review. Frameworks and evaluations reduce uncertainty and negative outcomes. The point is to keep everyone on their toes.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q8b" id="q8b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q8c">Risk is best managed by decentralizing authority. Negative outcomes are always balanced by potential opportunities. The point is to let those closest to the decision make the call.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q8c" id="q8c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q8d">Risk is best managed by sharing information and knowledge. Education and support reduce uncertainty and negative outcomes. The point is to foster a sense of shared responsibility.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q8d" id="q8d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 9 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">9. How is accountability achieved?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q9a">Accountability is stable and formalized. People know what to expect and what is expected of them. The same rewards and consequences are found throughout the organization.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q9a" id="q9a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q9b">Accountability is enabled through review and audit. People know that they will be asked to justify their actions. Rewards and consequences are contingent upon external expectations and judgments.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q9b" id="q9b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q9c">Accountability is results-driven. People know there are no excuses for failing. Rewards and consequences are a product of successful execution on the organization’s business.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q9c" id="q9c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q9d">Accountability is shared among the group. People know there are no rock stars or scapegoats. Rewards and consequences apply to everyone because everyone is a stakeholder in the organization.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q9d" id="q9d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <!-- Question 10 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">10. How is performance evaluated?</label>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q10a">Performance is evaluated against formal strategies and goals. Success criteria are unambiguous.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q10a" id="q10a" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q10b">Performance is evaluated against the organization’s ability to meet external requirements. Audits define success.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q10b" id="q10b" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q10c">Performance is evaluated on the basis of specific decisions and outcomes. Business success is the primary criteria.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q10c" id="q10c" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <label class="form-check-label flex-grow-1 me-2" for="q10d">Performance is evaluated by the organizational community. Success is defined through shared values, commitment, and mutual respect.</label>
+                        <input class="form-control option-input" style="width:90px;" type="number" name="q10d" id="q10d" min="0" max="10" step="0.5" placeholder="0" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="quizResult" class="mt-4"></div>
+        </div>
+    </main>
+    <footer>
+        <div id="social-bottom" class="col">
+            <!--Socials-->
+            <a href="https://www.linkedin.com/in/alxiden/" target="_blank">LinkedIn</a>
+            <!--Github-->
+            <a href="https://github.com/alxiden" target="_blank">GitHub</a>
+            <!--Mastodon-->
+            <a href="https://mastodon.me.uk/@Alxiden" target="_blank">Mastodon</a>
+            <!--Email-->
+            <a href="mailto:d.ward@alxiden.co.uk" target="_blank">Email</a>
+            <!--PGP Key-->
+            <a href="files/publickey.asc" download="files/publickey.asc">PGP Key</a>
+        </div>
+    </footer>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="../js/js.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
