@@ -25,6 +25,10 @@ h5 {
     transition: color 0.3s, text-decoration 0.3s;
 }
 
+hr {
+    border: 1px solid #5eff00; /* Green line */
+}
+
 h5:hover {
     color: #0575e6; 
     text-decoration: underline; 
