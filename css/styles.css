@@ -21,7 +21,7 @@ h4 {
 
 h5 {
     cursor: pointer;
-    color: #00f260; 
+    color: #0fb37d;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
@@ -30,8 +30,8 @@ hr {
 }
 
 h5:hover {
-    color: #0575e6; 
-    text-decoration: underline; 
+    color: #0a6bb8;
+    text-decoration: underline;
 }
 
 th{
@@ -58,7 +58,7 @@ td {
     margin-top: 10px;
     padding: 1em;
     border: 2px solid transparent;
-    border-image: linear-gradient(to right, #00f260, #0575e6) 1;
+    border-image: linear-gradient(to right, #0fb37d, #0a6bb8) 1;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5);
 }
 
@@ -124,6 +124,75 @@ td {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.skill-group {
+    margin-bottom: 1rem;
+}
+
+.skill-group h4 {
+    cursor: pointer;
+    color: #0fb37d;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.skill-group h4:hover {
+    color: #0a6bb8;
+    text-decoration: underline;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.skill-list li {
+    color: white;
+    margin-bottom: 0.35rem;
+}
+
+.skill-line {
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 560px; /* Keeps meter + labels compact on wide screens */
+}
+
+.skill-name {
+    width: 200px;
+}
+
+.skill-meter {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 12px;
+    background: #111;
+    border: 1px solid #0a6bb8;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: inset 0 0 6px rgba(15, 179, 125, 0.25);
+}
+
+.skill-meter-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0fb37d, #0a6bb8);
+}
+
+.skill-level {
+    font-size: 0.9rem;
+    color: #cfd8dc;
+}
+
+.badge-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #0a0a0a;
+    border: 1px solid #0fb37d;
+    border-radius: 4px;
+    text-align: center;
 }
 
 
