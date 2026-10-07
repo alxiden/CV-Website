@@ -7,42 +7,28 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Daniel Ward's Homepage</title>
+    <title>Security Culture Diagnostic Survey | Daniel Ward</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body>
-    <header id="header">
-        <div class="row">
-            <div id="title" class="col">
-                <h1>Daniel Ward</h1>
-                <h3>Cyber Security Researcher</h3>
-                <p id="hex">506f77657220696e2050726f77657373</p>
-            </div>
-            <div class="col">
-                <img id="shield" src="../img/shield.jpeg" alt="">
-            </div>
-            <div id="socials" class="col-sm">
-                <!--Socials-->
-                <a href="https://www.linkedin.com/in/alxiden/" target="_blank">LinkedIn</a>
-                <!--Github-->
-                <a href="https://github.com/alxiden" target="_blank">GitHub</a>
-                <!--Email-->
-                <a href="mailto:d.ward@alxiden.co.uk" target="_blank">Email</a>
-                <!--PGP Key-->
-                <a href="files/publickey.asc" download="files/publickey.asc">PGP Key</a>
-            </div>
-        </div>
-
+<body class="scds-page">
+    <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="Daniel Ward home"><span class="brand-mark">DW</span><span>Daniel Ward</span></a>
+        <span class="survey-header-label">Security Culture Diagnostic Survey</span>
+        <a class="header-contact" href="../index.html">Back to home <span aria-hidden="true">↗</span></a>
     </header>
     <main>
-        <div class="container my-4">
-            <a href="../index.html" class="btn btn-secondary mb-3">Home</a>
-            <h1>Security Culture Diagnostic Survey</h1>
-            <hr>
+        <div class="survey-shell">
+            <section class="survey-intro" aria-labelledby="survey-title">
+                <p class="eyebrow"><span class="status-dot"></span> Assessment / Culture / Insight</p>
+                <h1 id="survey-title">Understand your<br><em>security culture.</em></h1>
+                <p class="survey-lead">This diagnostic explores how your organisation values security, manages risk, and supports its people. Your responses create a practical picture of the culture behind the controls.</p>
+                <div class="survey-meta"><span><b>10</b> questions</span><span><b>40</b> prompts</span><span><b>10</b> points per question</span></div>
+            </section>
+            <div class="survey-instructions"><span class="instruction-number">01</span><p>Distribute exactly 10 points across the four statements in each question. There are no right or wrong answers; the value comes from an honest reflection of how your organisation works today.</p></div>
             <form id="quizForm">
                 <!-- Question 1 -->
-                <div class="mb-4">
+                <div class="mb-4 survey-question">
                     <label class="form-label fw-bold">1. What’s valued most?</label>
                     <div class="form-text mb-2">Distribute exactly 10 points across the 4 options below.</div>
                     <div class="mb-2 d-flex align-items-center justify-content-between">
@@ -254,24 +240,15 @@
                     </div>
                 </div>
                 <hr>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="survey-submit"><p>Ready to see the pattern?</p><button type="submit" class="btn btn-primary">Generate my results <span aria-hidden="true">→</span></button></div>
             </form>
-            <div id="quizResult" class="mt-4"></div>
+            <div id="quizResult" class="mt-4 survey-result"></div>
         </div>
     </main>
-    <footer>
-        <div id="social-bottom" class="col">
-            <!--Socials-->
-            <a href="https://www.linkedin.com/in/alxiden/" target="_blank">LinkedIn</a>
-            <!--Github-->
-            <a href="https://github.com/alxiden" target="_blank">GitHub</a>
-            <!--Mastodon-->
-            <a href="https://mastodon.me.uk/@Alxiden" target="_blank">Mastodon</a>
-            <!--Email-->
-            <a href="mailto:d.ward@alxiden.co.uk" target="_blank">Email</a>
-            <!--PGP Key-->
-            <a href="files/publickey.asc" download="files/publickey.asc">PGP Key</a>
-        </div>
+    <footer class="site-footer page-width">
+        <div><span class="footer-label">Built for better conversations</span><a class="footer-email" href="mailto:d.ward@alxiden.co.uk">d.ward@alxiden.co.uk</a></div>
+        <div class="footer-links"><a href="../index.html">Daniel Ward ↗</a></div>
+        <p class="copyright">© 2026 Daniel Ward</p>
     </footer>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
